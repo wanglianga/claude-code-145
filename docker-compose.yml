@@ -1,0 +1,8 @@
+services:
+  web:
+    build: .
+    image: elder-band-care-console:latest
+    container_name: elder-band-care-console
+    ports:
+      - "8080:80"
+    restart: unless-stopped
