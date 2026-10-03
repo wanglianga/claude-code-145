@@ -1,0 +1,29 @@
+{
+  "name": "elder-care-alert-console",
+  "private": true,
+  "version": "1.0.0",
+  "description": "社区长者智能手环告警家属确认与上门处置平台",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "test:flow": "esbuild scripts/flow-test.ts --bundle --platform=node --format=esm --outfile=node_modules/.cache/flow-test.mjs && node node_modules/.cache/flow-test.mjs"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^5.5.1",
+    "antd": "^5.21.6",
+    "dayjs": "^1.11.13",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.28.0",
+    "zustand": "^4.5.5"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.3",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.10"
+  }
+}
